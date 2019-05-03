@@ -1,0 +1,48 @@
+{
+  "name": "sails-arangodb",
+  "version": "1.0.0",
+  "description": "A sails-arangodb adapter for Sails 1.0 / Waterline",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/run-standard-tests",
+    "pretest": "npm run lint",
+    "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "sails-arangodb",
+    "adapter",
+    "sails",
+    "sails.js",
+    "waterline",
+    "orm",
+    "database-adapter"
+  ],
+  "author": "Nicolas El Khoury",
+  "license": "MIT",
+  "dependencies": {
+    "@sailshq/lodash": "^3.10.2",
+    "arangojs": "6.10.0",
+    "async": "2.5.0"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "waterline-adapter-tests": "^1.0.0-6"
+  },
+  "waterlineAdapter": {
+    "type": "sails-arangodb",
+    "interfaces": [
+      "semantic",
+      "queryable",
+      "associations"
+    ],
+    "features": []
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
+}
