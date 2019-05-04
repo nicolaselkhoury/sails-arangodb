@@ -1,5 +1,5 @@
 {
-  "name": "sails-arangodb",
+  "name": "sails-arango-database",
   "version": "1.0.0",
   "description": "A sails-arangodb adapter for Sails 1.0 / Waterline",
   "main": "index.js",
